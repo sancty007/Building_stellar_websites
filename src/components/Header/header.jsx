@@ -3,13 +3,15 @@ import {Logo_Finsweet} from './logo.jsx'
 import {Logo_Home} from './logo.jsx'
 import {Button} from '../ui/button.jsx'
 import { MoveRight } from 'lucide-react';
+import { AlignRight } from 'lucide-react';
+import {Card, CardDescription, CardFooter, CardTitle} from '../ui/card.jsx';
 
 
 export const Header = () =>{
 
     return (
         <>
-            <div className=' hidden lg:flex justify-between items-center bg-port-core px-40 py-4 '>
+            <div className=' hidden lg:flex justify-between items-center bg-port-core px-40 py-4 '>                
                 <div>
                     <Logo_Finsweet/>
                 </div>
@@ -28,6 +30,7 @@ export const Header = () =>{
                     <div className='flex items-center justify-center'>
                         <Button_header style="px-12 py-4  text-xs bg-port-core text-white border-2 border-gray-100 rounded-3xl  hover:bg-transparent bg-opacity-0"/>
                     </div>
+                    
                    
                 </div>
           </div>
@@ -49,41 +52,37 @@ export const Home = () => {
         <>
             <Header/>
 
-            <div className='lg:flex bg-port-core justify-center py-36'>
+           
 
-                <div className='px-4 grid grid-cols-1 md:grid-cols-2'>
+           {/*  <div className='lg:flex bg-port-core justify-center py-36 lg:px-40 '> */}
+            
+            {/* <div className='lg:flex justify-center bg-port-core py-20 lg:py-36 px-4 md:px-8 lg:px-40'>
 
-                    <div className='flex flex-col px-2 w-full justify-center lg:px-40 md:mb-8'>
+*/}    
+        <div className=" bg-port-core md:hidden flex justify-end px-8 py-4">
+                <AlignRight className="text-gray-suit text-3xl" />
+        </div>
 
-                        <div className='gap-2 mb-4 md:mb-12 flex flex-col text-white '>
-                            <h1 className='sm:text-xl md:text-white font-bold text-5xl mb-6 lg:text-5xl'>Building stellar websites for early startups</h1>
-                            <p className='text-white  md:text-gray-suit'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                        </div>
+        <section className='bg-port-core md:py-32'>
+            <div className='container lg:grid grid-cols-1 md:grid-cols-2'>
+                <Card className =" rounded-none bg-port-core border-none space-y-8 ">
+                    <CardTitle className =" text-white md:mb-8 md:text-5xl">Building stellar websites for early startups</CardTitle>
+                    <CardDescription className ="md:mb-12 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</CardDescription>
+                    <CardFooter className ="flex p-0 gap-x-10">
+                        <Button className='bg-Salomie rounded-full px-12 py-4'>View our work</Button>
+                        <a href="" className='flex items-center md:space-x-4 text-white'>
+                          <span className=''>View More</span>
+                          <MoveRight/>
+                        </a>
+                    </CardFooter>
+                </Card>
 
-                        <div className=' flex md:flex gap-10'>
-                            <div className='py-2 px-0 md:px-0'>
-                                <Button className=' rounded-3xl md:rounded-3xl px-14 py-4 text-black hover:text-white bg-Salomie focus:bg-white' >View our work</Button>
-                            </div>
-
-                            <div className='md:flex items-center justify-center text-white lg:flex flex-row'>
-                                <div className='md:mr-4'>
-                                    <p>View Pricing</p>
-                                </div>
-                                <div className='text-center'>
-                                    <MoveRight />
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div className='w-full flex justify-center '>
-                        <Logo_Home />
-                    </div>  
-
+                <div className='flex justify-center'>
+                    <Logo_Home/>  
                 </div>
             </div>
+        </section>
+            
           
         </>
     )

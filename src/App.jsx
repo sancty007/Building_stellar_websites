@@ -3,6 +3,8 @@ import './App.css'
 //import { Header } from './components/Header/header'
 import { Home } from './components/Header/header'
 import { How_we_work } from './components/How-we-work/how-we-work'
+import { Projet } from './components/Projets/Projets'
+import { Design } from './components/Design/Design'
 
 function App() {
  
@@ -10,6 +12,8 @@ function App() {
     <>
       <Home/>
       <How_we_work/>
+      <Projet/>
+      <Design/>
     </>
   )
 }

@@ -1,38 +1,51 @@
-import {Card} from '../ui/card';
+import {Card, CardDescription, CardTitle} from '../ui/card';
 import { MoveRight } from 'lucide-react';
 
 
 export const How_we_work = ()=>{
     return (
         <>
-            <div className='bg-Link-Water'>
-                <div className='md:flex py-32 gap-36 px-40 lg:flex '>
-                    <div className='w-full md:w-1/3 '>
-                        <Card className="md:border-none shadow-none bg-Link-Water rounded-none">
+            <div className='bg-Link-Water py-32 '>
+
+                <div className=' container space-y-2 md:grid grid-cols-6 py-32 md:gap-8'>
+
+                    <div className='col-span-2'>
+                        <Card className="border-none p-4 md:border-none shadow-none bg-Link-Water rounded-none">
                             <h1 className='md:font-bold text-2xl mb-4'>How we work</h1>
                             <p className='mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                            <div className='md:flex items-center lg:flex flex-row text-Blue'>
-                                <div className='mr-4 '>Get in touch with us</div>
-                                <div className='text-center '>
-                                    <MoveRight/>
-                                </div>
-                            </div>
+
+                            <a href="" className='flex items-center space-x-4 text-Blue'>
+                                <span>Get in touch with us</span>
+                                <MoveRight/>
+                            </a>
+
                         </Card>
                     </div>
 
-                    <div className='w-full  md:w-1/2 lg:w-2/3 flex'>
-                        <div className='w-1/2'>
-                            <Card className="md:border-none shadow-none rounded-none bg-Link-Water">
-                                <h2 className='text-xl font-semibold mb-2'>Wireframing</h2>
-                                <p className='text-gray-600'>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .</p>
-                            </Card>
-                        </div>
-                        <div className='w-1/2'>
-                            <Card className="md:border-none shadow-none rounded-none bg-Link-Water">
-                                <h1 className='text-xl font-semibold mb-2'>Strategy</h1>
-                                <p className='text-gray-600 '>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .</p>
-                            </Card>
-                        </div>
+                    <div className='grid grid-cols-1 col-start-4 col-span-3 space-y-2 md:grid-cols-2 gap-4'>
+                                    
+                        <Card className="border-none p-4 space-y-4 md:border-none shadow-none  bg-Link-Water lg:p-0">
+                            <CardTitle >Wireframing</CardTitle>
+                            <CardDescription className ="max-w-[300px]">Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .</CardDescription>
+                        </Card>                 
+                                    
+                        <Card className="border-none p-4 space-y-4 md:border-none shadow-none  bg-Link-Water lg:p-0">
+                            <CardTitle >Wireframing</CardTitle>
+                            <CardDescription className ="max-w-[300px]">Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .</CardDescription>
+                        </Card>                 
+                                    
+                        <Card className=" border-none p-4 space-y-4 md:border-none shadow-none  bg-Link-Water lg:p-0">
+                            <CardTitle >Wireframing</CardTitle>
+                            <CardDescription className ="max-w-[300px]">Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .</CardDescription>
+                        </Card>                 
+                                    
+                        <Card className="border-none p-4 space-y-4 md:border-none shadow-none  bg-Link-Water lg:p-0">
+                            <CardTitle >Wireframing</CardTitle>
+                            <CardDescription className ="max-w-[300px]">Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .</CardDescription>
+                        </Card>                 
+                    
+                                      
+                    
                     </div>
                 </div>
             </div>

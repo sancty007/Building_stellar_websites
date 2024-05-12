@@ -14,7 +14,7 @@ module.exports = {
       center: true,
       padding: "2rem",
       screens: {
-        "2xl": "1400px",
+        "2xl": "1279px",
       },
     },
     extend: {
@@ -25,7 +25,9 @@ module.exports = {
        'gray-suit': 'hsl(240, 13%,76%)',
        'Salomie' : 'hsl(43, 95%, 75%)',
        'Link-Water' :'hsl(225, 57%, 97%)',
-       'Blue' :'hsl(248, 96%, 48%)',
+       'Blue' : "#1C1E53",//'hsl(248, 96%, 48%)',
+       //'Dark-Blue : 'hsl(238, 50%, 22%)',
+       'Charade' :'hsl(236, 17%, 19%)',
 
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
