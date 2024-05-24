@@ -1,4 +1,4 @@
-import { Card } from '../ui/card.jsx';
+import { Card } from '../../../components/ui/card.jsx';
 
 export const Testimonials = () => {
     return (

@@ -1,6 +1,6 @@
 import { MoveRight } from 'lucide-react';
 import Card from '/images/Card.png';
-import image1 from '/images/image1.png';
+//import image1 from '/images/image1.png';
 //import { useMediaQuery } from 'react-responsive';
 //import { CardImage } from './images.jsx';
 
