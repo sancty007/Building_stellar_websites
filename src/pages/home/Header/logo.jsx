@@ -1,3 +1,5 @@
+// TODO: Pourquoi tu cree un composant specific pour le logo ???? et est-ce ce logo disponible que dans la home page?
+
 export const Logo_Finsweet = () =>{
     return(
         <>
